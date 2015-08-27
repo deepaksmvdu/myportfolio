@@ -6580,7 +6580,7 @@ button.close {
     width: 64px;
     height: 64px;
     position: fixed;
-    bottom: 10px;
+    bottom: 30px;
     right: 10px;
     display: none;
     text-indent: -9999px;
