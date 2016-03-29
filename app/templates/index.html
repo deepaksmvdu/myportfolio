@@ -1,0 +1,304 @@
+<!-- extend base layout -->
+
+
+{% extends "base.html" %}
+{% block content %}
+<!DOCTYPE html>
+<div>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top"  onclick = $("#menu-close").click(); >My Portfolio</a>
+            </li>
+            <li>
+                <a href="#top" onclick = $("#menu-close").click(); >Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick = $("#menu-close").click(); >About Me</a>
+            </li>
+            <li>
+                <a href="#services" onclick = $("#menu-close").click(); >My Work</a>
+            </li>
+            <li>
+                <a href="#technology" onclick = $("#menu-close").click(); >Technology Known</a>
+            </li>
+            <li>
+                <a href="#aim" onclick = $("#menu-close").click(); >My Aim</a>
+            </li>
+            <li>
+                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+            </li>
+            <li>
+                <a href="/login">Only For you</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header" >
+        <div class="text-vertical-center">
+        <img style="margin-top:40px;border-radius: 218px;"class="img-portfolio img-responsive" src="static/img/mypic.jpg">
+          
+            <h1 style="color:#fff">Deepak Kumar</h1>
+            <h6 style="color:#fff">Full Stack Developer</h6>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About me!</h2>
+                    <p class="lead"><i><b>"</b> I am full stack-deveoper.Commited to excellence and full time coding,I drive myself continously to learn and interpret new and diverse technologies.
+                            Creativity ,Commitment,Competativeness and Companionship are the four c's in my coding life<b> "</b>  
+                            </i>
+                    </p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>My work</h2>
+                    <p class="lead">Currently i am working in startup as a Full stack developer with angularjs,python,javascript,mongodb,REST API.I am also familier with Java,C,C++,basics of Android but i didn't get an opportunity to work on these technologies.I also sometimes do freelancing </p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Callout -->
+    <!-- <aside class="callout">
+        <div class="text-vertical-center">
+            <h1>Vertically Centered Text</h1>
+        </div>
+    </aside> -->
+
+    <!-- technology -->
+    <section id="technology" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>Technology Known</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="static/img/angular.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="static/img/mongo.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="static/img/flask.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="static/img/python.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="static/img/rest.jpg">
+                                </a>
+                            </div>
+                        </div>
+                         <div class="col-md-3">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="static/img/html.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="static/img/javascript.jpg">
+                                </a>
+                            </div>
+                        </div>
+                         <div class="col-md-3">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="static/img/java.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                     
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+
+    <!-- My Aim-->
+    <!-- class="services bg-primary" -->
+    <section id="aim" class="services">
+ 
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>My Aim</h2>
+                    <p class="lead">To explore new things and to get knowledge from each and every task I perform. Moreover I want to prove my individuality and want to be more responsible, loyal, and confident enough and to achieve success in the chosen field
+                    </p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <aside class="primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>CONTACT ME</h3>
+                     
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Map -->
+    <section id="contact" class="map" style="margin-top:30px;">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.3595974196396!2d77.33390631509786!3d28.5889871428013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5009cc46601%3A0xda3ade276653e6d5!2sP-Block%2C+Jal+Vayu+Vihar%2C+Noida%2C+Uttar+Pradesh+201301!5e0!3m2!1sen!2sin!4v1459186580136" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+        <!--    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7776.203881552244!2d77.64036339999998!3d12.965328300000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae141ceb4449a7%3A0x9dab9ab8052fc5b3!2s13th+H+Main+Rd%2C+HAL+II+Stage%2C+Doopanahalli%2C+Indiranagar%2C+Bengaluru%2C+Karnataka+560008!5e0!3m2!1sen!2sin!4v1440518772874" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+        <br />
+     
+        </iframe>
+ 
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Deepak Kumar</strong>
+                    </h4>
+                    <p>#227,P1, Sector 21, Noida Uttar Pradesh</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> 9796284223</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:dkmail.37@gmail.com">dkmail.37@gmail.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://www.facebook.com/deepaksmdu"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/37dkmail"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://in.linkedin.com/in/deepak37"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; deepaktech.in 2014</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="static/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="static/js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+<article >
+        <a href="#" class="scrollup">Scroll</a>
+    </article>
+
+<script type="text/javascript">
+        $(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+     
+</script>
+</div>
+{% endblock %}
