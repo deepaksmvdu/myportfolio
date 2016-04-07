@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="inshort">
+<html lang="en" ng-app="album">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,101 +12,35 @@
     <meta http-equiv="expires" content="Tue, 01 Jan 1980 11:00:00 GMT">
     <meta http-equiv="pragma" content="no-cache">
 
-    <link rel="icon" href="static/dashboard/images/favicon.png">
-    <title>Inshorts| Prism</title>
-
-    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/3.3.6/css/bootstrap.min.css">
- -->
-
+    <!-- <link rel="icon" href="static/img/favicon.png"> -->
+    <!-- <title>Album | Panel</title> -->
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.9.0/loading-bar.min.css' type='text/css' media='all' />
+ 
+  <!-- Compiled and minified JavaScript -->
+  <link rel="stylesheet" href="static/css/custom.css">
 
-    <link href="static/dashboard/css/main.css" rel="stylesheet"><!-- theme file CSS -->
-    <link href="static/dashboard/css/select2.css" rel="stylesheet">
-    <link href="static/dashboard/css/style.css?127" rel="stylesheet">
-
-<!--     <link href="static/dashboard/css/googleapis.css" rel="stylesheet">
- -->    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
-
-    <link rel="stylesheet" href="static/dashboard/css/webHostingHubGlyphs.css">
-    <link rel="stylesheet" href="static/dashboard/css/angular-toggle-switch-bootstrap-3.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css">
     
-    <link rel="stylesheet" href="static/dashboard/css/dataTables.bootstrap.css" />
-    <link rel="stylesheet" href="static/dashboard/css/loading-bar.css" />
-
-    <link rel="stylesheet" href="static/dashboard/css/bootstrap-datepicker.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
    
 </head>
 <body class="has-group-by nav-min" ng-cloak>    
     
         <ui-view></ui-view>
-    
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>    <!-- v1.11.3 -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script src="//cdn.jsdelivr.net/jquery.ui/1.11.4/jquery-ui.min.js"></script>
-    <script src="http://malsup.github.com/jquery.form.js"></script> 
-    <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
-
-
-    <script type="text/javascript" src="static/dashboard/lib/angular.js"></script>  <!-- v1.2.18 -->
-     <!-- <script type="text/javascript" src="http://code.highcharts.com/highcharts.js"></script> -->
-    <script src="//cdn.jsdelivr.net/jquery.datatables/1.10.10/js/jquery.dataTables.min.js"></script>
-    <script src="static/dashboard/lib/highstock.js"></script>
-    <script src="static/dashboard/lib/exporting.js"></script>
-    <script type="text/javascript" src="static/dashboard/js/datatables/angular-datatables.min.js"></script> <!-- v0.5 -->
-    
-    <script src="http://highcharts.github.io/export-csv/export-csv.js"></script>
-    <script type="text/javascript" src="static/dashboard/lib/highcharts-ng.js"></script>
-    <script type="text/javascript" src="static/dashboard/lib/angular-sanitize.js"></script>
-    <script type="text/javascript" src="static/dashboard/lib/ng-csv.js"></script>
-    <script type="text/javascript" src="static/dashboard/dist/angular-animate.min.js"></script>
-    <!-- <script type="text/javascript" src="static/dashboard/dist/pace.min.js"></script> -->
- 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.10/ngStorage.js"></script>
-    
-    <!-- <script type="text/javascript" src='static/dashboard/dist/createDialog.js'></script> -->
-    <script type="text/javascript" src='static/dashboard/dist/angular-toggle-switch.min.js'></script>
-    <script type="text/javascript" src="static/dashboard/lib/nodata-highcharts.js"></script>
-    <script type="text/javascript" src="static/dashboard/lib/highchart_theme.js"></script>
-
-    <!-- Angular dependencies -->
-   <!--  // <script src="static/dashboard/dist/angular-pageslide-directive.min.js"></script> -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
-    <script type="text/javascript" src="static/dashboard/dist/angular-resource.min.js"></script>
-
-    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.min.js"></script>
-    <script type="text/javascript" src="static/dashboard/dist/angular-dropdowns.js"></script>
-     <script type="text/javascript" src="static/dashboard/dist/loading-bar.js"></script>
-
-    <!-- <script type="text/javascript" src="static/dashboard/dist/angularytics.js"></script>  -->
-
-    <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
-    <!-- <script type="text/javascript" src="https://rawgit.com/brantwills/Angular-Paging/v2.0.0/dist/paging.min.js"></script> -->
-    <script type="text/javascript" src="static/dashboard/dist/bootstrap-datepicker.min.js"></script>
-   
     <!-- Scripts -->
-    <script type="text/javascript" src="static/dashboard/js/app.js"></script>
-    <script type="text/javascript" src="static/dashboard/js/directives.js"></script>
-    <script type="text/javascript" src="static/dashboard/js/controllers.js"></script>
-    <script type="text/javascript" src="static/dashboard/js/indexhiCtrl.js"></script>
-    <script type="text/javascript" src="static/dashboard/js/indexenCtrl.js"></script>
-    <script type="text/javascript" src="static/dashboard/js/analyticsCtrl.js"></script>
-    <script type="text/javascript" src="static/dashboard/js/segmentCtrl.js"></script>
-    <script type="text/javascript" src="static/dashboard/js/videoCtrl.js"></script>
-    <script type="text/javascript" src="static/dashboard/js/notifyCtrl.js"></script>
-    
-    
-    <script type="text/javascript" src="static/dashboard/js/services.js"></script>
-    <script src="static/dashboard/dist/bootstrap.min.js"></script>
-     
-     <script src="static/dashboard/js/datatables/dataTables.bootstrap.js"></script> 
+    <script type="text/javascript" src="static/dashboard/lib/angular.js"></script>
+    <script type="text/javascript" src="static/dashboard/lib/angular-resource.min.js"></script>
 
-     <script type="text/javascript" src="static/dashboard/dist/select.js"></script>
-     <script type="text/javascript" src="static/dashboard/dist/select2.js"></script>
-    <script data-require="angular-ui@0.4.0" data-semver="0.4.0" src="http://rawgithub.com/angular-ui/angular-ui/master/build/angular-ui.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+    <script type="text/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.js"></script>
+   
+    <script type="text/javascript" src="static/dashboard/js/app.js"></script>
+    <script type="text/javascript" src="static/dashboard/js/controller.js"></script>
+    <script type="text/javascript" src="static/dashboard/js/service.js"></script>
+   <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.9.0/loading-bar.min.js'></script>
+    
+
     <!-- <script type="text/javascript" src="static/dashboard/dist/d3.v3.min.js"></script> -->
    
 
