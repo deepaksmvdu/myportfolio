@@ -18,19 +18,19 @@ def index():
 
 
 
-@app.route('/login', methods=['GET', 'POST'])
-def login():
-	form = LoginForm()
-	if request.method == "POST":
-		userData = form.data
-		if userData["username"]=="deepak" and userData["password"]=="junmun":
-			session['username']='deepakjunmun'
+# @app.route('/login', methods=['GET', 'POST'])
+# def login():
+# 	form = LoginForm()
+# 	if request.method == "POST":
+# 		userData = form.data
+# 		if userData["username"]=="deepak" and userData["password"]=="junmun":
+# 			session['username']='deepakjunmun'
 
-			return redirect('/dashboard#/')
-		else:
-			return "NOT Authorize"
-	else:
-		return render_template('login.html', title='Sign In',form=form)
+# 			return redirect('/dashboard#/')
+# 		else:
+# 			return "NOT Authorize"
+# 	else:
+# 		return render_template('login.html', title='Sign In',form=form)
 
 
 
