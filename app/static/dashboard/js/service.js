@@ -7,11 +7,12 @@ var albumServices = angular.module('albumServices',['ngResource'])
 	/*var baseUrl = 'http://54.218.19.56:8071'*/
 
 
-albumServices.factory('Listpics',function($http, $log, $q){
+albumServices.factory('trendsData',function($http, $log, $q){
 	 
-	return { query: function(){
+	return { query: function(params){
 
-			var url = '/PicsList';			
+			var url = '/PicsList/'+params;
+			console.log(url)			
 			var deferred = $q.defer();
 
 			 $http.get(url)
